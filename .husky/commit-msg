@@ -11,7 +11,7 @@ msg_re="^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release
 
 if [[ ! $commit_msg =~ $msg_re ]]
 then
-	git "\n不合法的 commit 消息提交格式，请使用正确的格式：\
+	echo -e "\n不合法的 commit 消息提交格式，请使用正确的格式：\
 	\nfeat: add comments\
 	\nfix: handle events on blur (close #28)\
 	\n详情请查看 git commit 提交规范：https://github.com/woai3c/Front-end-articles/blob/master/git%20commit%20style.md"
